@@ -6,73 +6,120 @@
   <title>Portfolio | Sota Washio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <header class="hero">
-    <h1>鷲尾蒼大</h1>
-    <p>京都大学大学院情報学研究科 / HRI研究室</p>
+    <div class="hero-inner">
+      <p class="label">Portfolio</p>
+      <h1>Sota Washio</h1>
+    </div>
   </header>
 
   <main>
 
-    <section>
+    <section class="section">
       <h2>About</h2>
       <p>
-        大学院で〇〇について研究しています。ハッカソンでのアプリ開発や、
-        個人制作ゲームの開発に取り組んでいます。
-      </p>
-      <p>
-        興味分野：〇〇、〇〇、〇〇
+        京都大学大学院 情報学研究科 HRI研究室 所属
       </p>
     </section>
 
-    <section>
-      <h2>Research</h2>
-      <h3>研究テーマ：〇〇</h3>
-      <p>
-        〇〇をテーマに研究しています。現在は〇〇を目的として、
-        〇〇という手法を用いた取り組みを行っています。
-      </p>
-      <p>
-        ※公開可能な範囲で概要のみ記載しています。
-      </p>
-    </section>
-
-    <section>
+    <section class="section">
       <h2>Projects</h2>
 
-      <article class="project">
-        <h3>ハッカソンアプリ名</h3>
-        <p>
-          〇〇という課題を解決するために、チームで開発したアプリです。
-          私は主に〇〇機能の実装を担当しました。
-        </p>
-        <p><strong>使用技術：</strong> HTML / CSS / JavaScript / Python / Firebase</p>
-        <p><strong>工夫した点：</strong> 〇〇を改善するために、〇〇を実装しました。</p>
-        <p>
-          <a href="#" target="_blank">GitHub</a>
-          /
-          <a href="#" target="_blank">Demo</a>
-        </p>
-      </article>
+      <div class="project-list">
 
-      <article class="project">
-        <h3>個人制作ゲーム名</h3>
-        <p>
-          〇〇をテーマにした個人制作ゲームです。
-          プレイヤーが〇〇を楽しめるように、〇〇の実装を工夫しました。
-        </p>
-        <p><strong>使用技術：</strong> Unity / C#</p>
-        <p><strong>工夫した点：</strong> 操作感や難易度調整にこだわりました。</p>
-        <p>
-          <a href="#" target="_blank">Demo / Movie</a>
-        </p>
-      </article>
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/images/research.png" alt="研究内容の説明画像">
+          </div>
 
+          <div class="project-content">
+            <p class="project-type">Research</p>
+            <h3>研究：オンラインコミュニケーションのミニチュア化</h3>
+
+            <p>
+                オンライン会議の主催者、参加者を表す小型デバイスを主催者の手元に配置し、会議のミニチュアを操作する感覚で管理できるシステム<br>
+                参加者の組み分けや状況把握を支援することを目指す
+            </p>
+
+            <ul class="project-info">
+              <li><strong>使用技術：</strong> Python / ROS </li>
+            </ul>
+
+            <div class="project-actions">
+              <button class="action-button" onclick="openPdfModal('assets/slides/research.pdf')">
+                Detail
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/images/hackathon.png" alt="ハッカソンアプリの説明画像">
+          </div>
+
+          <div class="project-content">
+            <p class="project-type">Hackathon</p>
+            <h3>ハッカソン：京大生をまじめにするアプリ「KUMACHAN」</h3>
+
+            <p>
+                学生の「授業出席」「課題提出」に応じて算出されたスコアを基にランクバトルを行うアプリ<br>
+                ゲーミフィケーションによる行動改善を目指す
+            </p>
+
+            <ul class="project-info">
+              <li><strong>使用技術：</strong> JavaScript / React </li>
+            </ul>
+
+            <div class="project-actions">
+              <button class="action-button" onclick="openPdfModal('assets/slides/hackathon.pdf')">
+                Detail
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/images/game.png" alt="個人制作ゲームの説明画像">
+          </div>
+
+          <div class="project-content">
+            <p class="project-type">Game</p>
+            <h3>個人制作ゲーム：「ビカム侍」</h3>
+
+            <p>
+                Unityで初めて制作したゲーム<br>
+                知人に与えられた「斬る」「一撃」「属性攻撃」のテーマを基に作成<br>
+                現れる敵に応じてW,A,S,Dから適切なキーを選ぶ簡単操作だが、「脳がバグる」複雑さ
+            </p>
+
+            <ul class="project-info">
+              <li><strong>使用技術：</strong> Unity / C#</li>
+            </ul>
+
+            <div class="project-actions">
+              <a
+                class="action-button"
+                href="https://unityroom.com/games/become_samurai"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Link
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
     </section>
 
-    <section>
+    <section class="section">
       <h2>Skills</h2>
+
       <ul class="skills">
         <li>Python</li>
         <li>JavaScript</li>
@@ -83,17 +130,65 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>GitHub: <a href="https://github.com/wash-5454" target="_blank">@wash-5454</a></p>
-      <p>Email: washio.sota.28@gmail.com</p>
+    <section class="section">
+        <h2>Contact</h2>
+        <p>GitHub: <a href="https://github.com/wash-5454" target="_blank">@wash-5454</a></p>
+        <p>Email: washio.sota.28@gmail.com</p>
     </section>
 
   </main>
 
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()" aria-label="閉じる">
+        ×
+      </button>
+
+      <iframe
+        id="modal-frame"
+        class="modal-frame"
+        src=""
+        title="説明スライド"
+      ></iframe>
+    </div>
+  </div>
+
   <footer>
     <p>&copy; 2026 Sota Washio</p>
   </footer>
+
+  <!-- モーダル用 -->
+  <script>
+    function openPdfModal(src) {
+      const modal = document.getElementById('modal');
+      const frame = document.getElementById('modal-frame');
+
+      frame.src = src;
+      modal.classList.add('show');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('modal');
+      const frame = document.getElementById('modal-frame');
+
+      modal.classList.remove('show');
+      frame.src = '';
+    }
+
+    // モーダルの外側をクリックしたら閉じる
+    document.getElementById('modal').addEventListener('click', function(event) {
+      if (event.target === this) {
+        closeModal();
+      }
+    });
+
+    // Escキーで閉じる
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeModal();
+      }
+    });
+  </script>
 
 </body>
 </html>
