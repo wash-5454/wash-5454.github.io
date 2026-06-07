@@ -10,6 +10,7 @@ body {
   background: #f4f6f8;
 }
 
+/* ===== ヘッダー ===== */
 .hero {
   background: linear-gradient(135deg, #1f2937, #374151);
   color: white;
@@ -36,12 +37,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.subtitle {
-  margin-top: 16px;
-  color: #e5e7eb;
-  font-size: 1.1rem;
-}
-
+/* ===== メイン ===== */
 main {
   max-width: 1080px;
   margin: 0 auto;
@@ -64,6 +60,7 @@ h2 {
   color: #1f2937;
 }
 
+/* ===== Projects ===== */
 .project-list {
   display: flex;
   flex-direction: column;
@@ -72,42 +69,11 @@ h2 {
 
 .project-card {
   display: grid;
-  grid-template-columns: 320px 1fr;
+  grid-template-columns: 380px 1fr;
   gap: 24px;
   padding: 24px;
   border: 1px solid #e5e7eb;
   border-radius: 16px;
   background: #ffffff;
-}
-
-.project-image {
-  width: 100%;
-}
-
-.project-image img {
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: contain;
-  object-position: center;
-  border-radius: 12px;
-  border: 1px solid #e5e7eb;
-  background: #f3f4f6;
-}
-
-.project-content h3 {
-  margin: 6px 0 12px;
-  font-size: 1.35rem;
-  color: #111827;
-}
-
-.project-type {
-  display: inline-block;
-  margin: 0;
-  padding: 4px 10px;
-  border-radius: 999px;
-  background: #e0f2fe;
-  color: #0369a1;
-  font-size: 0.85rem;
-  font-weight: 700;
 }
 
